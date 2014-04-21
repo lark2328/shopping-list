@@ -1,0 +1,84 @@
+
+body {
+	background-color: #000099;
+}
+
+#container, #logo, #form, #box, #list {
+	display: block;
+}
+
+#container {
+	margin: auto;
+	padding-top: 20px;
+	background-color: #66ccff;
+	width:700px;
+	min-height:500px;
+	border: 1px solid #E6CA2E;
+	border-radius: 10px;
+}
+
+#logo {
+	margin: auto;
+	width: 180px;
+	background-color: white;
+	color: #0033cc;
+	text-align: center;
+	border: 7px solid #000099;
+	border-radius: 75%;
+	line-height: 50px;
+	font-family: 'Raleway',Verdana;
+	padding:20px;
+	letter-spacing: 3px;
+}	
+
+h1 span {
+	font-size: 35px;
+	text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;;
+}
+
+#text {
+margin-top: 20px;
+text-align: center;
+color:#000099;
+font-family: 'Raleway',Verdana;
+font-size: 1em;
+font-weight: bold;
+line-height: 40px;
+}
+
+#form {
+	display:block;
+	margin:auto;
+	width:690px;
+}
+
+#box {
+float: left;
+margin-top: 20px;
+margin-left: 100px;
+width: 400px;
+height: 30px;
+border: 3px solid #000099;
+}
+
+button {
+float: left;
+margin-top: 22px;
+margin-left: 10px;
+height:35px;
+width: 60px;
+border: 2px solid #000099;
+font-weight: bold;
+}
+
+#list {
+	clear: both;
+	text-align: center;
+	padding-top: 10px;
+	color: #000099;
+	font-family: 'Raleway', Verdana;
+	font-size: 1em;
+}
