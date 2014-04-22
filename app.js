@@ -2,11 +2,11 @@
 $(document).ready(function() {
 
 $('button').on('click', function() {
-	//alert('click button');
+	
 	value = $("#box").val();
-	//alert(value);
-	//$('#list').append(value);
-	$('li').first().next().append(value);
+
+	$('li').first().next().append(value+"<br/>");
+	
 });
 
 $('li').dblclick(function() {
@@ -19,10 +19,7 @@ var $lis = $('li').click(function(e) {
 	$lis.removeClass(classHighlight);
 	$(this).addClass(classHighlight);
 
-
 });
 
-});
 
-//$('li').click(function() {
-//	$(this).effect('highlight', {color:"#669966"}, 3000);
+});
