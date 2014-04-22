@@ -74,11 +74,18 @@ border: 2px solid #000099;
 font-weight: bold;
 }
 
-#list {
+#list, #list2, li {
 	clear: both;
 	text-align: center;
 	padding-top: 10px;
 	color: #000099;
 	font-family: 'Raleway', Verdana;
 	font-size: 1em;
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+.highlight {
+    background-color: white;
+    font-weight: bold;
 }
