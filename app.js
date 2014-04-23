@@ -21,5 +21,21 @@ var $lis = $('li').click(function(e) {
 
 });
 
+$(document).on('keydown', function( event ) {
+if ( event.which == 13) {
+	value = $("#box").val();
+	$('li').first().next().append(value+"<br/>");
+}
+
+})
+
+//.on('keyup', function( event ) {
+	//if ( event.which == 13) {
+	//value = $("#box").val();
+	//$('li').first().next().append(value+"<br/>");
+//}
+
+//});
+
 
 });
