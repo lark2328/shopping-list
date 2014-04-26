@@ -25,6 +25,7 @@ $(document).on('keydown', function( event ) {
 if ( event.which == 13) {
 	value = $("#box").val();
 	$('li').first().next().append(value+"<br/>");
+	event.preventDefault();﻿
 }
 
 })
