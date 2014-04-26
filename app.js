@@ -5,38 +5,32 @@ $('button').on('click', function() {
 	
 	value = $("#box").val();
 
-	$('li').first().next().append(value+"<br/>");
+	$('ul#list2>li:last-child').after('<li>'+value+'</li>');
 	
 });
 
-$('li').dblclick(function() {
+$('ul#list2>li').dblclick(function() {
 	$(this).remove();
 });
 
-var classHighlight = 'highlight';
-var $lis = $('li').click(function(e) {
-	e.preventDefault();
-	$lis.removeClass(classHighlight);
-	$(this).addClass(classHighlight);
+$('ul#list2>li').on('click', function() {
+$(this).toggle('highlight');
+//var classHighlight = 'highlight';
+//var $lis = $('ul#list2>li').click(function(e) {
+	//e.preventDefault();
+	//$lis.removeClass(classHighlight);
+	//$(this).addClass(classHighlight);
 
 });
 
 $(document).on('keydown', function( event ) {
 if ( event.which == 13) {
 	value = $("#box").val();
-	$('li').first().next().append(value+"<br/>");
+	$('ul#list2>li:last-child').after('<li>'+value+'</li>');
 	event.preventDefault();﻿
 }
 
 })
-
-//.on('keyup', function( event ) {
-	//if ( event.which == 13) {
-	//value = $("#box").val();
-	//$('li').first().next().append(value+"<br/>");
-//}
-
-//});
 
 
 });
