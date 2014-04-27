@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 $('button').on('click', function() {
@@ -9,17 +8,10 @@ $('button').on('click', function() {
 	
 });
 
-$('ul#list2>li').dblclick(function() {
-	$(this).remove();
-});
 
-$('ul#list2>li').on('click', function() {
-$(this).toggle('highlight');
-//var classHighlight = 'highlight';
-//var $lis = $('ul#list2>li').click(function(e) {
-	//e.preventDefault();
-	//$lis.removeClass(classHighlight);
-	//$(this).addClass(classHighlight);
+$('#list2').on('dblclick','li', function() {
+	var classHighlight = 'highlight' 
+	$(this).toggle(classHighlight);
 
 });
 
@@ -30,7 +22,7 @@ if ( event.which == 13) {
 	event.preventDefault();﻿
 }
 
-})
+});
 
 
 });
